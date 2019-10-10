@@ -14,7 +14,6 @@ class InstagramBot:
 		self.driver.close()
 
 	def login(self):
-		# "//a[@href'accounts/login']"
 		driver = self.driver
 
 		driver.get("http://www.instagram.com")
@@ -86,7 +85,7 @@ IG = InstagramBot("username", "password")
 
 try:
 	IG.login()
-	IG.goToPage("beepboopchronicles")
+	IG.goToPage("username_2")
 	IG.likeUsersPost()
 except Exception as e:
 	print(e)
