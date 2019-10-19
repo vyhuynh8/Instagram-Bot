@@ -69,7 +69,7 @@ class InstagramBot:
 			time.sleep(2)
 			driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 
-			time.sleep(random.randint(2,4))
+			time.sleep(random.randint(2,5))
 			like = driver.find_element_by_xpath('//span[@aria-label="Like"]').click()
 			time.sleep(random.randint(2,4))
 			print("Liked: " + pic + " | Photos Remaining: " + str(num_photos))
